@@ -45,5 +45,8 @@ https://arxiv.org/pdf/2402.08268
 ![image](https://github.com/qianxinchun/Inquiry-Odyssey-LLM-Exploration/assets/7309139/e185f010-deae-4665-bc68-6b3eb3daf174)
 
 
+![image](https://github.com/qianxinchun/Inquiry-Odyssey-LLM-Exploration/assets/7309139/a5ad6217-bcc4-4072-95ec-14c1060cc387)
+
+## https://www.reddit.com/r/singularity/comments/1cd9xpm/llama_3_now_with_160k_context/
 
 
