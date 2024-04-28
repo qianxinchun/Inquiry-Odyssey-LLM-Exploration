@@ -31,3 +31,19 @@ We build on top of the EasyContext Blockwise RingAttention library [3] to scalab
 https://blog.eleuther.ai/rotary-embeddings/
 https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/
 
+### RING Attention explained: 1 Mio Context Length https://www.youtube.com/watch?v=jTJcP8iyoOM
+https://medium.com/@tanuj22july/breaking-the-boundaries-understanding-context-window-limitations-and-the-idea-of-ring-attention-170e522d44b2
+https://github.com/lucidrains/ring-attention-pytorch
+https://github.com/lhao499/RingAttention
+To put the memory demand in perspective, consider processing 100 million tokens. Even with a batch size of just one, a modest Transformer model with a hidden size of 1024 would require over 1000GB of memory. This requirement far exceeds the capacity of contemporary GPUs and TPUs, which typically offer less than 100GB of high-bandwidth memory (HBM). The stark contrast between the memory demands of large context processing and the available hardware capabilities underscores the critical nature of this challenge.
+Ring Attention ingeniously sidesteps this issue by breaking down the input text into smaller, manageable blocks. Each block is processed on different devices arranged in a ring-like structure, allowing for parallel processing. Here’s the clever part: as each device finishes with its block, it passes on crucial information to the next device in the ring, ensuring a continuous flow of context without overloading any single device.
+The complexity of computing attention remains quadratic. However, the innovation of Ring Attention lies not in reducing the complexity per se but in enabling the processing of sequences that are much longer than what traditional models can handle by distributing the computation across multiple devices. The quadratic complexity is tackled within manageable blocks, and the ring topology ensures efficient aggregation of information across the entire sequence.
+
+### WORLD MODEL ON MILLION-LENGTH VIDEO AND LANGUAGE WITH BLOCKWISE RINGATTENTION
+https://arxiv.org/pdf/2402.08268
+
+![image](https://github.com/qianxinchun/Inquiry-Odyssey-LLM-Exploration/assets/7309139/e185f010-deae-4665-bc68-6b3eb3daf174)
+
+
+
+
