@@ -27,4 +27,5 @@ References
 [3] https://github.com/jzhang38/EasyContext
 
 ### Extending the RoPE https://blog.eleuther.ai/yarn/
-
+https://blog.eleuther.ai/rotary-embeddings/
+https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/
