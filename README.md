@@ -49,4 +49,5 @@ https://arxiv.org/pdf/2402.08268
 
 ## https://www.reddit.com/r/singularity/comments/1cd9xpm/llama_3_now_with_160k_context/
 
-
+## https://www.reddit.com/r/LocalLLaMA/comments/1cetn9z/quantization_seems_to_hurt_the_quality_of_llama_3/
+perplexity: more statistics, added documentation #6936 https://github.com/ggerganov/llama.cpp/pull/6936 
