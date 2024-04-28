@@ -98,13 +98,12 @@ issue: https://github.com/ggerganov/llama.cpp/issues/6914
 
 The issue specifically calls out that the multi-digits tokenization is wrong. You'll have to wait until it's fixed.
 
-
-
-
 ## https://www.reddit.com/r/LocalLLaMA/comments/16pz63a/exllamav2_quantization_colab_notebook/
 EXL2 quantizing is very resource efficient. 7b models take about 8g of VRAM, even a 70b takes less than 24gb and can be done on a 3090. Try it yourself on google colab. (maybe start smaller than 70b, those take a while)
 
 https://colab.research.google.com/drive/1Cbb8nrwUxoxAbsIu1LLotsk2W52nj0Py?usp=sharing
+
+
 
 
 
