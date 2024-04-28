@@ -106,5 +106,14 @@ https://colab.research.google.com/drive/1Cbb8nrwUxoxAbsIu1LLotsk2W52nj0Py?usp=sh
 ## k-quants #1684
 https://github.com/ggerganov/llama.cpp/pull/1684
 
+![image](https://github.com/qianxinchun/Inquiry-Odyssey-LLM-Exploration/assets/7309139/a0e9b146-ff00-483b-91ea-2dc42fd5ea57)
+
+![image](https://github.com/qianxinchun/Inquiry-Odyssey-LLM-Exploration/assets/7309139/6a55b8ba-94b3-42bd-8c4e-6ad541c03057)
+
+a 2-bit quantized 65B model is very similar to an 8-bit quantized 30B (in both RAM needs and quality)
+
+an 8-bit quantized 7B model is of very similar quality as a 2-bit quantized 13B model
+
+You probably want 3 or 4 or 5 bit quantization, if this is anything like LLAMA2. From 3 bit to 2, your quality goes down a lot while RAM requirements only go down a little. From 5 bit to 6 your quality only goes up a little.
 
 
