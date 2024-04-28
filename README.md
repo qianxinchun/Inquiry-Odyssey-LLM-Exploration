@@ -7,7 +7,7 @@
 3. Why should we do online RLHF? (reference: https://zhuanlan.zhihu.com/p/688806682)
 
 ## https://huggingface.co/gradientai/Llama-3-8B-Instruct-262k
-Approach:
+### Approach:
 
 meta-llama/Meta-Llama-3-8B-Instruct as the base
 
@@ -15,10 +15,11 @@ NTK-aware interpolation [1] to initialize an optimal schedule for RoPE theta, fo
 
 Progressive training on increasing context lengths similar to the Large World Model [2] (See details below)
 
-Infra:
+### Infra:
 
 We build on top of the EasyContext Blockwise RingAttention library [3] to scalably and efficiently train on contexts up to 262144 tokens on Crusoe Energy high performance L40S cluster.
-References
+
+### References
 
 [1] Peng, Bowen, et al. "Yarn: Efficient context window extension of large language models." arXiv preprint arXiv:2309.00071 (2023).
 
@@ -29,3 +30,4 @@ References
 ### Extending the RoPE https://blog.eleuther.ai/yarn/
 https://blog.eleuther.ai/rotary-embeddings/
 https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/
+
