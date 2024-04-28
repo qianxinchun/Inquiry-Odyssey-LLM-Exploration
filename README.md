@@ -103,7 +103,8 @@ EXL2 quantizing is very resource efficient. 7b models take about 8g of VRAM, eve
 
 https://colab.research.google.com/drive/1Cbb8nrwUxoxAbsIu1LLotsk2W52nj0Py?usp=sharing
 
-
+## k-quants #1684
+https://github.com/ggerganov/llama.cpp/pull/1684
 
 
 
